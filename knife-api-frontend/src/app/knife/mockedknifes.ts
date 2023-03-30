@@ -1,0 +1,30 @@
+import { KnifeInterface } from "./knifeInterface";
+import { StatusEnum } from "./knifeInterface";
+
+export const MOCKEDKNIVES:KnifeInterface[]=[
+    {id: 1, name:"knife1",
+    category:{id:1,name:"catName"},
+    photoUrls:["knife1URL1","knife1URL2"],
+    tags:[{id:1,name:"tag1"}],
+    statusEnum:StatusEnum.AVAILABLE},
+    {id: 2, name:"knife2",
+    category:{id:1,name:"catName"},
+    photoUrls:["knife1URL1","knife1URL2"],
+    tags:[{id:1,name:"tag1"}],
+    statusEnum:StatusEnum.AVAILABLE},
+    {id: 3, name:"knife3",
+    category:{id:1,name:"catName"},
+    photoUrls:["knife1URL1","knife1URL2"],
+    tags:[{id:1,name:"tag1"}],
+    statusEnum:StatusEnum.AVAILABLE},
+    {id: 4, name:"knife4",
+    category:{id:1,name:"catName"},
+    photoUrls:["knife1URL1","knife1URL2"],
+    tags:[{id:1,name:"tag1"}],
+    statusEnum:StatusEnum.AVAILABLE},
+    {id: 5, name:"knife5",
+    category:{id:1,name:"catName"},
+    photoUrls:["knife1URL1","knife1URL2"],
+    tags:[{id:1,name:"tag1"}],
+    statusEnum:StatusEnum.AVAILABLE},
+]

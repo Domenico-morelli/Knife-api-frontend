@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "angular-in-memory-web-api": "^0.15.0",
+    "primeflex": "^3.3.0"
+  }
+}

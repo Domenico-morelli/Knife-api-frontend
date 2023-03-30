@@ -1,0 +1,29 @@
+<!-- <div *ngFor="let Knife of knivesArray" class="knife">
+  <div><span>id: </span>{{Knife.id}}</div>
+ <div><span>name: </span>{{Knife.name}}</div>
+ <div><span>image: </span>{{Knife.photoUrls}}</div>
+ <div><span>state: </span>{{Knife.status}}</div>
+</div> -->
+
+<p-carousel [value]="knivesArray" [numVisible]="3" [numScroll]="4" class=" flex-row flex-nowrap" [responsiveOptions]="responsiveOptions">
+    <ng-template let-knivesArray pTemplate="knivesArray">
+      <div class="knife-item flex align-items-center justify-content-center flex-grow-0 m-6">
+        <div class="knife-item-content flex-1 flex-grow-1 md:min-w-full white-space-normal ">
+            <div class="mb-50">
+                <img src="{{knivesArray.photoUrls}}" alt="{{knivesArray.name}}" class="knife-image" />
+            </div>
+            <div>
+              <div><span>id:</span>{{knivesArray.id}}</div>
+                <h4 class="mb-1">{{knivesArray.name}}</h4>
+                <div>{{knivesArray.status}}</div>
+                <h5 class="knife-price">120€</h5>
+                 <!-- <p-tag [value]="knivesArray.status" [severity]="getSeverity(knivesArray.status")"></p-tag> -->
+                <div class="car-buttons mt-5">
+                    <p-button type="button" styleClass="p-button-help p-button-rounded" icon="ui-button-icon-left ui-icon ui-c pi pi-heart"></p-button>
+                    <p-button type="button" styleClass="p-button-success p-button-rounded mr-2" icon="ui-button-icon-left ui-icon ui-c pi pi-shopping-cart"></p-button>
+                  </div>
+            </div>
+        </div>
+    </div>
+      </ng-template>
+</p-carousel>
